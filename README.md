@@ -8,5 +8,5 @@ El número de movimientos necesarios para mover n discos de la torre A a la torr
 ## Contenido
 - hanoidomain.pddl: Dominio del problema: Lenguaje de descripción de estados y acciones que se pueden dar.
 - hanoiproblem.pddl: Instancia del problema: Caso especifico a resolver (Estado inicial (init) + Cjto. estados finales (goal))
-- output.txt: Salida del programa tras pasar por el [editor PDDL](http://editor.planning.domains/)
+- outputs.txt: 2^n-1 salidas del programa tras pasar por el [editor PDDL](http://editor.planning.domains/)
 - Hanoi3.java: Programa en Java del juego de las Torres de Hanói, siendo n variable.

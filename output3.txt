@@ -1,0 +1,7 @@
+(mover d1 d2 torrec)
+(mover d2 d3 torreb)
+(mover d1 torrec d2)
+(mover d3 torrea torrec)
+(mover d1 d2 torrea)
+(mover d2 torreb d3)
+(mover d1 torrea d2)
