@@ -2,18 +2,18 @@
     (:requirements :strips :equality :adl
     )
     (:predicates 
-        (limpiar ?x)
-        (en ?x ?y)
-        (menor ?x ?y)
+        (libre ?x)
+        (union ?x ?y)
+        (objetivo ?x ?y)
     )
     (:action mover
     :parameters (?disc ?from ?to)
-    :precondition (and (menor ?to ?disc) (en ?disc ?from) (limpiar ?disc) (limpiar ?to))
+    :precondition (and (objetivo ?to ?disc) (union ?disc ?from) (libre ?disc) (libre ?to))
     :effect  (and 
-                (limpiar ?from)
-                (en ?disc ?to)
-                (not (en ?disc ?from))  
-        		(not (limpiar ?to))   
+                (libre ?from)									
+                (union ?disc ?to)
+                (not (union ?disc ?from))  
+        		(not (libre ?to))   
 	          )
 	)
 )
